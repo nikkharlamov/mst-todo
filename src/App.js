@@ -172,7 +172,7 @@ const App = () => {
     ));
 
     const AppView = observer(props => (
-        <div className="flex flex-col w-10/12 mx-auto pt-4 bg-blue-200 rounded-md">
+        <div className="flex flex-col w-10/12 md:w-5/12 mx-auto pt-4 bg-blue-200 rounded-md">
             <span className="text-center mb-2">TODO</span>
             {values(props.store.todos)
                 .filter(TODO_FILTERS[props.store.filter])
