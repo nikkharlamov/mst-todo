@@ -15,3 +15,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@layer components {
+  .btn-active {
+    @apply focus:outline-none hover:bg-green-300 active:bg-green-500;
+  }
+}
